@@ -13,7 +13,7 @@ public class ImageFilterApp {
 	public static void main(String[] args) {
 		ImageFilterIf filter = null;
 		
-		filter = new ErodeFilter();
+		filter = new DilateFilter();
 	
 		FilteredImageWindow app = new FilteredImageWindow(filter, DefaultImageFile);
 		app.setTitle("Image Filter Test Application");
