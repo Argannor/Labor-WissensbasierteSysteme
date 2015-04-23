@@ -13,7 +13,8 @@ public class ImageFilterApp {
 	public static void main(String[] args) {
 		ImageFilterIf filter = null;
 		
-		filter = new DilateFilter();
+		//filter = new DilateFilter();
+        filter = new NeuralRedEyeFilter();
 	
 		FilteredImageWindow app = new FilteredImageWindow(filter, DefaultImageFile);
 		app.setTitle("Image Filter Test Application");
